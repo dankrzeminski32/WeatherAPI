@@ -7,6 +7,28 @@
     <title>Weather API Test</title>
   </head>
   <body>
-    <script></script>
+    <h1>Weather API Test</h1>
+
+    <script>
+      fetchWeather();
+
+      function fetchWeather() {
+        let key = "***REMOVED***";
+        let url =
+          "http://api.openweathermap.org/data/2.5/weather?q=London&appid=***REMOVED***";
+        //fetch the API
+        fetch(url)
+          .then((response) => {
+            if (!response.ok) throw new Error(response.statusText);
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      }
+    </script>
   </body>
 </html>
