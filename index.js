@@ -24,9 +24,12 @@ function showWeatherItems(data) {
 }
 
 function showWeatherDescription(data) {
+  let weatherDescription = capitalizeFirstLetter(
+    data.current.weather[0].description
+  );
   let row = document.querySelector(".weather-description");
-  console.log(data.current.weather[0].description);
-  row.innerHTML = `${data.current.weather[0].description}`;
+  console.log(weatherDescription);
+  row.innerHTML = `${weatherDescription}`;
 }
 
 function showWeatherHeader(data) {
@@ -56,4 +59,8 @@ function fetchWeather() {
     .catch((error) => {
       console.error(error);
     });
+}
+
+function capitalizeFirstLetter(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
