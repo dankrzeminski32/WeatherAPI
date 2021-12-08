@@ -6,38 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="main.css" />
-    <title>Weather API Test</title>
+    <script src="index.js"></script>
+    <title>Weather Widget</title>
   </head>
   <body>
-    <h1>Weather API Test</h1>
-
-    <div class="container">
-      <div class="location"><h1>Indianapolis</h1></div>
+    <div class="main-header">
+      <div class="header-text">Weather Widget</div>
     </div>
+    <div class="container">
+      <h1 class="location">Indianapolis</h1>
+      <div class="container-current">
+        <!-- <img class="current weth-logo" src="" alt="" />
+        <h1 class="current temp"></h1> -->
+      </div>
+      <div class="weather-description">
 
-    <script>
-      fetchWeather();
-
-      function fetchWeather() {
-        let key = "***REMOVED***";
-        //let url =
-        //"http://api.openweathermap.org/data/2.5/weather?q=Indianapolis&appid=***REMOVED***&units=imperial";
-        // let url =
-        //   "http://pro.openweathermap.org/data/2.5/forecast/hourly?q=Indianapolis&appid=***REMOVED***";
-        let url = `https://api.openweathermap.org/data/2.5/onecall?lat=39.7684&lon=-86.1581&exclude=minutely,alerts&appid=${key}&units=imperial`;
-        //fetch the API
-        fetch(url)
-          .then((response) => {
-            if (!response.ok) throw new Error(response.statusText);
-            return response.json();
-          })
-          .then((data) => {
-            console.log(data);
-          })
-          .catch((error) => {
-            console.error(error);
-          });
-      }
-    </script>
+      </div>
+      <hr />
+      <ul class="three-day-forecast">
+        <!-- <li class="first">
+          <p class="day"></p>
+          <img class="weth-logo" />
+          <p class="temp"></p>
+        </li>
+        <li class="second">
+          <p class="day"></p>
+          <img class="weth-logo" />
+          <p class="temp"></p>
+        </li>
+        <li class="third">
+          <p class="day"></p>
+          <img class="weth-logo" />
+          <p class="temp"></p>
+        </li>
+      </ul> -->
+    </div>
+  </div>
   </body>
 </html>

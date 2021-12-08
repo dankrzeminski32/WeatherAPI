@@ -116,8 +116,61 @@ sup {
   width: 25rem;
   margin: 0 auto;
   padding: 1rem;
+  color: white !important;
+}
+.location {
+  font-size: 2.5rem;
 }
 
-.location {
-  color: white;
+.container h1 {
+  text-align: center;
+}
+
+.container ul {
+  list-style-type: none;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first img {
+  max-width: 100%;
+  height: 7rem;
+}
+
+.container-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-current img {
+  height: 10rem;
+  max-width: 100%;
+}
+
+.current-temp {
+  font-size: 3rem;
+}
+
+.weather-description {
+  text-align: center;
+}
+
+.main-header {
+  margin: 0;
+  background-color: darkgray;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.header-text {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
