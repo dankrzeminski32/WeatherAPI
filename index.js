@@ -1,5 +1,6 @@
 fetchWeather();
 
+//displays the weather data
 function showWeatherItems(data) {
   let row = document.querySelector(".three-day-forecast");
   console.log(data.daily.toString());
