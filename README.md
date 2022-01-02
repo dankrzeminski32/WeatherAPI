@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/dankrzeminski32/WeatherAPI">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGzIRgvlPN10av3majURcbbej_B9iRIOkfSQ&usqp=CAU" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/76189617/147867286-6cfcb7e1-10cd-415a-85ff-0be885e8216e.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Weather API Widget</h3>
@@ -22,20 +22,21 @@
 ## About The Project
 
 <p align="middle" >
-  <img src="https://user-images.githubusercontent.com/76189617/147840227-6588ced6-860e-414b-a8f1-e4be0ee08bfc.png" alt="Project example">
+  <img src="https://user-images.githubusercontent.com/76189617/147867320-f18bd476-5d22-421c-a61e-c9433ee8cdc5.png" alt="Project example">
 </p>
 
-Do you need to add a lightweight widget on your site that displays **real time** stock data?
+Treat everyone that views your site with **accurate** and **real time** weather forecasts. 
 
-Look no further, this stock widget displays the current price as well as the 24 hour change (percentage and number).
+The widget is set to display the current forecast as well as the forecast for the next three days. 
+
+Adjust the location to your desired area. 
 
 This project was built with:
 
 - [Vanilla JS](https://www.javascript.com/)
 - [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [jQuery](https://jquery.com/)
-- [Stock API](https://site.financialmodelingprep.com/)
+- [Weather API](https://openweathermap.org/)
 
 <!-- GETTING STARTED -->
 
@@ -46,10 +47,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Make a free account at https://site.financialmodelingprep.com/
+1. Make a free account at https://openweathermap.org/
 2. Clone the repo
    ```
-   git clone https://github.com/dankrzeminski32/StockApi.git
+   git clone https://github.com/dankrzeminski32/WeatherAPI.git
    ```
 3. Create a `config.js` file
 4. Add this code to `config.js`
@@ -68,12 +69,11 @@ Nice work, you now have a **copy** of this project on your local machine.
 
 ## Roadmap
 
-- [x] Fetch the stock data from API
-- [x] Filter stock data for price and 24 hr change
+- [x] Fetch current and 72 hour forecast from weather API
+- [x] Transform the data
+   - [x] Convert to correct measurement system
+   - [x] Trim decimals and specify percentages
 - [x] Make HTML & CSS Display of data
-- [x] jQuery for vertical marquee
-  - [x] use SlideUp function
-  - [x] Adjust CSS to make 2/3 visible at a time
 
 <br />
 
@@ -107,4 +107,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Daniel Krzeminski - dankrzeminski32@gmail.com
 
-Project Link: [https://github.com/dankrzeminski32/StockApi](https://github.com/dankrzeminski32/StockApi)
+Project Link: [https://github.com/dankrzeminski32/WeatherAPI](https://github.com/dankrzeminski32/WeatherAPI)
