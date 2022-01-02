@@ -42,7 +42,7 @@ function showWeatherHeader(data) {
 }
 
 function fetchWeather() {
-  let key = "***REMOVED***";
+  let key = config.MY_KEY;
   let url = `https://api.openweathermap.org/data/2.5/onecall?lat=39.7684&lon=-86.1581&exclude=minutely,alerts&appid=${key}&units=imperial`;
   //fetch the API
   fetch(url)
