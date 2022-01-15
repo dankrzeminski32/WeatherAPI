@@ -112,7 +112,7 @@ sup {
 /* sets superscript and subscript text so that it doesn't throw off leading for elements in which they are included */
 
 .container {
-  background-color: red;
+  background-color: #cb997e;
   width: 25rem;
   margin: 0 auto;
   padding: 1rem;
