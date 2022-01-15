@@ -22,7 +22,7 @@
 ## About The Project
 
 <p align="middle" >
-  <img src="https://user-images.githubusercontent.com/76189617/147867320-f18bd476-5d22-421c-a61e-c9433ee8cdc5.png" alt="Project example">
+  <img src="https://user-images.githubusercontent.com/76189617/149606710-fb44311f-78d6-4afa-9eed-675fdb84b9a1.png" alt="Project example">
 </p>
 
 Treat everyone that views your site with **accurate** and **real time** weather forecasts. 
